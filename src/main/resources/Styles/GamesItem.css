@@ -1,0 +1,37 @@
+.games_item_container {
+    -fx-background-color: linear-gradient(to bottom, #111827, #0B1024);
+    -fx-background-radius: 18;
+    -fx-border-color: #7C3AED;
+    -fx-border-radius: 18;
+    -fx-border-width: 1.5;
+    -fx-effect: dropshadow(gaussian, rgba(124,58,237,0.45), 18, 0, 0, 0);
+
+    -fx-padding: 15;
+    -fx-pref-width: 220;
+    -fx-pref-height: 260;
+    -fx-min-width: 220;
+    -fx-min-height: 260;
+    -fx-max-width: 220;
+    -fx-max-height: 260;
+}
+
+.games_item_container Label {
+    -fx-text-fill: white;
+    -fx-font-size: 1.8em;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+    -fx-wrap-text: true;
+}
+
+.games_item_container .image-view {
+    -fx-fit-width: 150;
+    -fx-fit-height: 130;
+}
+
+.games_item:hover {
+    -fx-scale-x: 1.04;
+    -fx-scale-y: 1.04;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(250,204,21,0.75), 22, 0, 0, 0);
+}

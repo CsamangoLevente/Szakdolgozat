@@ -1,0 +1,39 @@
+.delete_user_container {
+    -fx-background-color: linear-gradient(to bottom right, #070A18, #15102A);
+}
+
+.search_box {
+    -fx-spacing: 15;
+    -fx-padding: 20;
+    -fx-background-color: transparent;
+}
+
+.search_box Text {
+    -fx-fill: white;
+}
+
+.search_box TextField {
+    -fx-background-color: #111827;
+    -fx-text-fill: white;
+    -fx-background-radius: 10;
+    -fx-border-color: #7C3AED;
+    -fx-border-radius: 10;
+}
+
+.search_box Button {
+    -fx-background-color: linear-gradient(to right, #7C3AED, #2563EB);
+    -fx-text-fill: white;
+    -fx-background-radius: 10;
+}
+
+.list-view {
+    -fx-background-color: transparent;
+}
+
+.list-view .viewport {
+    -fx-background-color: transparent;
+}
+
+.list-cell {
+    -fx-background-color: transparent;
+}

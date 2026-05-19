@@ -1,0 +1,31 @@
+.user_cell_container{
+    -fx-background-color:#111827;
+    -fx-background-radius:14;
+    -fx-border-color:#7C3AED;
+    -fx-border-radius:14;
+    -fx-effect:dropshadow(gaussian, rgba(124,58,237,0.45), 15,0,0,0);
+    -fx-padding:15;
+}
+
+.user_cell_container FontAwesomeIconView{
+    -fx-fill:#FACC15;
+}
+
+.user_cell_container HBox{
+    -fx-spacing:15;
+}
+
+.user_cell_container Label{
+    -fx-text-fill:white;
+    -fx-font-size:1.3em;
+}
+
+.delete_button{
+    -fx-background-color:#DC2626;
+    -fx-text-fill:white;
+    -fx-background-radius:8;
+}
+
+.delete_button:hover{
+    -fx-background-color:#EF4444;
+}

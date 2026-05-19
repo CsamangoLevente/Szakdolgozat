@@ -1,0 +1,39 @@
+.add_user_container{
+    -fx-background-color: linear-gradient(to bottom right, #070A18, #15102A);
+    -fx-padding:30;
+}
+
+.add_user_container Text{
+    -fx-fill:white;
+    -fx-font-size:2em;
+}
+
+.add_user_container VBox{
+    -fx-spacing:15;
+    -fx-border-color:#7C3AED;
+    -fx-border-width:0 0 0 2;
+    -fx-padding:20;
+}
+
+.add_user_container TextField{
+    -fx-background-color:#111827;
+    -fx-text-fill:white;
+    -fx-background-radius:10;
+    -fx-border-color:#7C3AED;
+    -fx-border-radius:10;
+}
+
+.add_user_container Button{
+    -fx-background-color: linear-gradient(to right, #7C3AED, #2563EB);
+    -fx-text-fill:white;
+    -fx-background-radius:10;
+}
+
+.add_user_container Button:hover{
+    -fx-cursor:hand;
+}
+
+.add_user_container Label{
+    -fx-text-fill:white;
+    -fx-font-size:15px;
+}

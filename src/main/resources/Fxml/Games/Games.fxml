@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="750.0" prefWidth="850.0" styleClass="games_container" stylesheets="@../../Styles/Games.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.ArcadeFx.Controllers.Games.GamesController">
+    <Text layoutX="335.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Arcade játékok" AnchorPane.leftAnchor="335.0" AnchorPane.topAnchor="14.0" />
+    <HBox fx:id="gamesHBox" alignment="CENTER" prefHeight="660.0" prefWidth="800.0" styleClass="games_container" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="28.0" AnchorPane.topAnchor="70.0">
+        <ScrollPane fx:id="gamesScrollPane" prefHeight="660.0" prefWidth="818.0">
+            <GridPane fx:id="gamesGridPane" prefHeight="0.0" prefWidth="0.0" styleClass="viewport">
+            <rowConstraints>
+               <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            </rowConstraints>
+            </GridPane>
+         <HBox.margin>
+            <Insets />
+         </HBox.margin>
+        </ScrollPane>
+    </HBox>
+</AnchorPane>

@@ -1,0 +1,23 @@
+.games_container {
+    -fx-background-color: linear-gradient(to bottom right, #070A18, #15102A);
+}
+
+.games_container Text {
+    -fx-fill: white;
+    -fx-font-size: 3em;
+    -fx-font-family: "Calibri Light";
+    -fx-font-weight: bold;
+}
+
+.games_container .scroll-pane {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.games_container .scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+
+.games_container GridPane {
+    -fx-background-color: transparent;
+}

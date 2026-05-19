@@ -1,0 +1,57 @@
+.main_menu_container {
+    -fx-background-color: linear-gradient(to bottom right, #070A18, #15102A);
+    -fx-alignment: center;
+    -fx-padding: 0 10 0 10;
+}
+
+.left_container {
+    -fx-background-color: linear-gradient(to bottom, #0B1024, #15102A);
+    -fx-background-radius: 18;
+    -fx-border-color: #7C3AED;
+    -fx-border-radius: 18;
+    -fx-border-width: 1;
+    -fx-effect: dropshadow(gaussian, rgba(124,58,237,0.45), 18, 0, 0, 0);
+}
+
+.title_container {
+    -fx-background-color: transparent;
+    -fx-alignment: top_center;
+    -fx-padding: 25 10 20 10;
+}
+
+.title_container FontAwesomeIconView {
+    -fx-fill: #FACC15;
+}
+
+.title_container Text {
+    -fx-fill: white;
+    -fx-font-size: 2.2em;
+    -fx-font-weight: bold;
+}
+
+.menu_container {
+    -fx-padding: 15 15 15 20;
+    -fx-spacing: 16;
+}
+
+.menu_container .button {
+    -fx-pref-width: 150;
+    -fx-pref-height: 48;
+    -fx-background-color: rgba(255,255,255,0.06);
+    -fx-background-radius: 10;
+    -fx-text-fill: #E5E7EB;
+    -fx-font-size: 1.1em;
+    -fx-alignment: center_left;
+    -fx-border-color: rgba(255,255,255,0.08);
+    -fx-border-radius: 10;
+}
+
+.menu_container .button:hover {
+    -fx-cursor: hand;
+    -fx-background-color: linear-gradient(to right, #7C3AED, #2563EB);
+    -fx-effect: dropshadow(gaussian, rgba(124,58,237,0.7), 15, 0, 0, 0);
+}
+
+.menu_container .button FontAwesomeIconView {
+    -fx-fill: #E5E7EB;
+}

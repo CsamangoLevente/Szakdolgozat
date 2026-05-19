@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="180.0" styleClass="main_menu_container" stylesheets="@../../Styles/UserMenu.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.ArcadeFx.Controllers.Admin.AdminMenuController">
+    <AnchorPane prefHeight="730.0" prefWidth="160.0" styleClass="left_container">
+        <VBox prefHeight="80.0" prefWidth="160.0" styleClass="title_container" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <FontAwesomeIconView glyphName="HOME" size="30" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="GameFx" />
+        </VBox>
+        <VBox layoutX="40.0" layoutY="265.0" prefHeight="400.0" prefWidth="160.0" styleClass="menu_container" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0">
+            <Button fx:id="games_button" mnemonicParsing="false" text="Játékok">
+                <graphic>
+                    <FontAwesomeIconView glyphName="HOME" size="20" />
+                </graphic>
+            </Button>
+            <Button fx:id="users_button" mnemonicParsing="false" text="Felhasználók">
+                <graphic>
+                    <FontAwesomeIconView glyphName="USERS" size="20" />
+                </graphic>
+            </Button>
+            <Button fx:id="add_user_button" mnemonicParsing="false" text="Hozzáadás">
+                <graphic>
+                    <FontAwesomeIconView glyphName="PLUS" size="20" />
+                </graphic>
+            </Button>
+         <Button fx:id="delete_user_button" mnemonicParsing="false" text="Button">
+            <graphic>
+               <FontAwesomeIconView glyphName="MINUS" size="20" />
+            </graphic>
+         </Button>
+            <Button fx:id="logout_button" mnemonicParsing="false" text="Kilépés">
+                <graphic>
+                    <FontAwesomeIconView glyphName="EXTERNAL_LINK" size="20" />
+                </graphic>
+            </Button>
+        </VBox>
+    </AnchorPane>
+</VBox>

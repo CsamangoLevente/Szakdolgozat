@@ -1,0 +1,22 @@
+.users_container{
+    -fx-background-color: linear-gradient(to bottom right, #070A18, #15102A);
+}
+
+.users_container Text{
+    -fx-fill:white;
+    -fx-font-size:2em;
+    -fx-font-weight:bold;
+}
+
+.users_container .list-view{
+    -fx-background-color:transparent;
+}
+
+.users_container .list-view .viewport{
+    -fx-background-color:transparent;
+}
+
+.users_container .list-cell{
+    -fx-background-color:transparent;
+    -fx-padding:10;
+}

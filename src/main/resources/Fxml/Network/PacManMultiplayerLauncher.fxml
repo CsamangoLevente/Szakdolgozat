@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.ArcadeFx.Network.PacManMultiplayerLauncherController"
+            stylesheets="@../../Styles/PacManMultiplayerLauncher.css" prefWidth="420" prefHeight="300" styleClass="launcher-root">
+    <VBox alignment="CENTER" spacing="18" AnchorPane.topAnchor="25" AnchorPane.bottomAnchor="25" AnchorPane.leftAnchor="30" AnchorPane.rightAnchor="30" styleClass="launcher-card">
+        <Text text="PacMan Multiplayer" styleClass="launcher-title"/>
+        <CheckBox fx:id="hostCheckBox" text="Ez a gép legyen a szerver" styleClass="launcher-checkbox"/>
+        <TextField fx:id="ipField" text="localhost" promptText="Szerver IP címe" styleClass="launcher-input"/>
+        <Button fx:id="startButton" text="Csatlakozás" styleClass="launcher-button"/>
+        <Label fx:id="infoLabel" styleClass="launcher-info"/>
+    </VBox>
+</AnchorPane>

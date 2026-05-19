@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="750.0" prefWidth="850.0" styleClass="add_user_container" stylesheets="@../../Styles/AddUser.css"
+            xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="hu.ArcadeFx.Controllers.Admin.AddUserController">
+   <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Új felhasználó hozzáadása"
+         AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0"/>
+   <VBox fillWidth="false" layoutX="14.0" layoutY="43.0" prefHeight="700.0" prefWidth="600.0"
+         AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="40.0">
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vezetéknév:"/>
+      <TextField fx:id="last_name_tfield"/>
+      <Text layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Keresztnév:"/>
+      <TextField fx:id="first_name_tfield" layoutX="10.0" layoutY="28.0"/>
+      <Text layoutX="10.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jelszó:"/>
+      <TextField fx:id="password_tfield" layoutX="10.0" layoutY="71.0"/>
+      <Text layoutX="10.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Felhasználói azonosító:"/>
+      <CheckBox fx:id="user_id_cbox" mnemonicParsing="false"/>
+      <Label fx:id="user_id_label" styleClass="user_id_label" text="Id"/>
+      <Button fx:id="add_user_button" mnemonicParsing="false" text="Felhasználó hozzáadása"/>
+      <Label fx:id="error_label" styleClass="error_label" text="Hiba:"/>
+   </VBox>
+</AnchorPane>

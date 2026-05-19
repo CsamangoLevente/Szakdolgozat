@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<?import javafx.scene.control.PasswordField?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="login_container" stylesheets="@../Styles/login.css"
+            xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="hu.ArcadeFx.Controllers.LoginController">
+   <VBox alignment="CENTER" prefHeight="400.0" prefWidth="200.0" styleClass="login_logo_container"
+         AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <opaqueInsets>
+         <Insets/>
+      </opaqueInsets>
+      <FontAwesomeIconView glyphName="USER" size="30"/>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ArcadeFX"/>
+   </VBox>
+   <VBox layoutX="239.0" layoutY="25.0" prefHeight="350.0" prefWidth="300.0" styleClass="login_form_container"
+         AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="220.0" AnchorPane.rightAnchor="20.0"
+         AnchorPane.topAnchor="20.0">
+      <Label id="choice-prompt-text" text="Felhasználó típusa:"/>
+      <ChoiceBox fx:id="account_selector" prefWidth="100.0" styleClass="account_selector"/>
+      <Label fx:id="user_address_label" text="Felhasználói név:"/>
+      <TextField fx:id="user_address_field" styleClass="input_field"/>
+      <Label text="Jelszó:"/>
+      <PasswordField fx:id="password_field" styleClass="input_field"/>
+      <Button fx:id="login_button" mnemonicParsing="false" styleClass="login_form_container" text="Bejelentkezés"/>
+      <Label fx:id="error_label" styleClass="error_label"/>
+   </VBox>
+</AnchorPane>
